@@ -1,0 +1,33 @@
+#container {
+	height: 99vh;
+	width: 99vw;
+	margin: 0 0;
+	padding: 0 0;
+	display: grid;
+	grid-template:
+		'h h h' 1fr
+		'm m m' 6fr
+		's s s' 1fr
+		/ [col-start] 1fr [col-2] 1fr [col-3] 1fr [col-end];
+}
+.header {
+	grid-area: h;
+}
+
+.main {
+	grid-area: m;
+}
+
+.item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #222;
+	text-align: center;
+	color: #222;
+	background-color: bisque;
+	font-size: 2em;
+	font-family: arial, sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}
