@@ -30,4 +30,11 @@
 	font-family: arial, sans-serif;
 	font-weight: bold;
 	cursor: pointer;
+	border-radius: 20px;
+}
+
+#startButton:hover {
+	background-color: blueviolet;
+	scale: 90%;
+	transition: 1s;
 }
