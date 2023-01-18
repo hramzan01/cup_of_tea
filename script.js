@@ -10,15 +10,16 @@ function renderScene() {
 	var t = document.getElementById('container');
 	var i = document.getElementById('itch');
 	var y = document.getElementsByClassName('item')
+	for(var p=0; p<y.length; p++)
 	if (x.innerHTML === 'Off') {
 		x.innerHTML = 'On';
 		i.style.backgroundColor = 'green';
-		y.style.backgroundcolour = 'red'
 		t.style.gridTemplate = `
-	'm m m' 1fr
-	's s s' 1fr
-	'h h h' 1fr
-	/ [col-start] 1fr [col-2] 1fr [col-3] 1fr [col-end]`;
+		'm m m' 1fr
+		's s s' 1fr
+		'h h h' 1fr
+		/ [col-start] 1fr [col-2] 1fr [col-3] 1fr [col-end]`;
+		y[p].style.backgroundColor = 'red';
 	} else {
 		x.innerHTML = 'Off';
 		i.style.backgroundColor = 'blue';
