@@ -9,6 +9,7 @@ function renderScene() {
 	var x = document.getElementById('startButton');
 	var t = document.getElementById('container');
 	var i = document.getElementById('itch');
+	vat y = document.getElementsByClassName('item')
 	if (x.innerHTML === 'Off') {
 		x.innerHTML = 'On';
 		i.style.backgroundColor = 'green';
