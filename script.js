@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function renderScene() {
 	var x = document.getElementById('startButton');
 	var t = document.getElementById('container');
-	var i = document.getElementById('bitch');
+	var i = document.getElementById('itch');
 	if (x.innerHTML === 'Off') {
 		x.innerHTML = 'On';
 		i.style.backgroundColor = 'green';
