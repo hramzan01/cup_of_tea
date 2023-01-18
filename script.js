@@ -9,10 +9,11 @@ function renderScene() {
 	var x = document.getElementById('startButton');
 	var t = document.getElementById('container');
 	var i = document.getElementById('itch');
-	vat y = document.getElementsByClassName('item')
+	var y = document.getElementsByClassName('item')
 	if (x.innerHTML === 'Off') {
 		x.innerHTML = 'On';
 		i.style.backgroundColor = 'green';
+		y.style.backgroundcolour = 'red'
 		t.style.gridTemplate = `
 	'm m m' 1fr
 	's s s' 1fr
