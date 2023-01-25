@@ -28,9 +28,9 @@ function renderScene() {
 		's m h' 1fr
 		's m h' 1fr
 		's m h' 1fr
-		/ [col-start] 1fr [col-2] 1fr [col-3] 1fr [col-end]`;
+		/ [col-start] 1fr [col-2] 5fr [col-3] 1fr [col-end]`;
 			y[p].style.backgroundColor = 'green';
-			f.innerHTML = '<img src = "img/316ceb2b81248f951926e806ecb6e8a9.gif">';
+			f.innerHTML = '<img src = "img/teaMix.svg">';
 			f.style.backgroundColor = 'yellow';
 			f.getElementById('DAP').id = 'gif';
 		}
