@@ -39,3 +39,9 @@
 	scale: 90%;
 	transition: 1s;
 }
+
+#homePage:hover {
+	background-color: blueviolet;
+	scale: 90%;
+	transition: 1s;
+}
