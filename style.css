@@ -25,7 +25,6 @@
 	border: 1px solid #222;
 	text-align: center;
 	color: #222;
-	background-color: rgb(19, 19, 19);
 	font-size: 2em;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: normal;
@@ -41,7 +40,40 @@
 }
 
 #homePage:hover {
-	background-color: blueviolet;
+	background-color: rgb(85, 143, 111);
 	scale: 90%;
 	transition: 1s;
 }
+
+body {
+background-image: url('img/tableTop.jpeg');
+background-repeat:round ;
+background-size:auto
+}
+
+#homeCup {
+	grid-area: i;
+	height: 20vh;
+	width: 95vw;
+}
+
+#homeContainer {
+	display: grid;
+	height: 100vh;
+	width: 95vw;
+	grid-template:
+		'x x x' 8fr
+		'i i i' 2fr
+		'y y y' 2fr
+		/ [col-start] 1fr [col-2] 1fr [col-3] 1fr [col-end];
+}
+
+#homeTop {
+	grid-area: x;
+}
+
+#homeBottom {
+	grid-area: y;
+}
+
+
