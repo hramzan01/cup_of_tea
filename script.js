@@ -12,8 +12,31 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+	var button = document.querySelector('#trigger');
+	button.addEventListener('click', function () {
+		changeImage();
+	});
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+	var button = document.querySelector('#homeBottom');
+	button.addEventListener('click', function () {
+		startGame();
+	});
+});
+
+function changeImage() {
+	var f = document.getElementById('DAP');
+	f.innerHTML = '<img src = "img/teaCup.svg">';
+}
+
 function renderHome() {
 	window.location='/homepage.html';
+}
+
+function startGame() {
+	window.location='/index.html';
 }
 
 function renderScene() {
@@ -29,9 +52,8 @@ function renderScene() {
 		's s s' 1fr
 		'h h h' 1fr
 		/ [col-start] 1fr [col-2] 1fr [col-3] 1fr [col-end]`;
-			y[p].style.backgroundColor = 'red';
+			y[p].style.color = 'orange';
 			f.innerHTML = 'Development Area Programme';
-			f.style.backgroundColor = 'blue';
 			f.getElementById('gif').id = 'DAP';
 		} else {
 			x.innerHTML = 'Off';
@@ -40,9 +62,7 @@ function renderScene() {
 		's m h' 1fr
 		's m h' 1fr
 		/ [col-start] 1fr [col-2] 5fr [col-3] 1fr [col-end]`;
-			y[p].style.backgroundColor = 'green';
 			f.innerHTML = '<img src = "img/teaMix.svg">';
-			f.style.backgroundColor = 'yellow';
 			f.getElementById('DAP').id = 'gif';
 		}
 }

@@ -31,15 +31,9 @@
 	border-radius: 20px;
 }
 
-#startButton:hover {
-	background-color: blueviolet;
-	scale: 90%;
-	transition: 1s;
-}
-
-#homePage:hover {
-	background-color: rgb(85, 143, 111);
-	scale: 90%;
+button:hover {
+	color: rgb(64, 64, 64);
+	scale: 95%;
 	transition: 1s;
 }
 
