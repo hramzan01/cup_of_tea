@@ -43,7 +43,7 @@
 	transition: 1s;
 }
 
-body {
+.homepage {
 background-image: url('img/tableTop.jpeg');
 background-repeat:round ;
 background-size:auto
