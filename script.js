@@ -5,6 +5,17 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+	var button = document.querySelector('#homePage');
+	button.addEventListener('click', function () {
+		renderHome();
+	});
+});
+
+function renderHome() {
+	window.location='/homepage.html';
+}
+
 function renderScene() {
 	var x = document.getElementById('startButton');
 	var t = document.getElementById('container');

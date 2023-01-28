@@ -28,9 +28,7 @@
 	font-size: 2em;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: normal;
-	cursor: pointer;
 	border-radius: 20px;
-	color: antiquewhite;
 }
 
 #startButton:hover {
@@ -76,4 +74,7 @@ background-size:auto
 	grid-area: y;
 }
 
-
+button {
+	background-color: transparent;
+	cursor: pointer;
+}
